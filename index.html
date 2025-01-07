@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Modern+Guides&display=swap" rel="stylesheet">
+
+  <title>Echo Everest</title>
+
+  <style>
+    * {
+      font-family: monospace;
+      color: black;
+      background-color: #C7DBE5;
+    }
+
+    .playwrite-us-modern-guides-regular {
+      font-family: "Playwrite US Modern Guides", serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 1.5em;
+      margin: 0;
+      padding: 0;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .heading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .heading p {
+      font-size: 5rem;
+      font-weight: 500;
+      margin: 0;
+    }
+
+    .title {
+      font-size: 6rem;
+      font-weight: 700;
+      display: block;
+      color: rgb(0, 0, 124);
+      font-weight: 900;
+    }
+
+
+    .sub-wrapper {
+      margin-top: 20px;
+    }
+
+    .keyboard {
+      text-align: center;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .keyboard__row {
+      display: inline-block;
+      height: 3em;
+      margin: 0.2em;
+      cursor: pointer;
+    }
+
+    .keyboard__row>* {
+      float: left;
+      position: relative;
+      background: #333;
+      text-align: center;
+      color: #eee;
+      border-radius: 0.3em;
+      margin: 0.2em;
+      padding: 0.2em;
+      width: 3.3em;
+      height: 100%;
+      box-sizing: border-box;
+      cursor: pointer;
+      -webkit-user-select: none;
+      border: 1px solid #444;
+      box-shadow: 0 0.2em 0 0.05em #222;
+      border-bottom-color: #555;
+    }
+
+    .keyboard__row>div[data-pressed],
+    .keyboard__row>div:active {
+      background: #2a2a2a;
+      color: #aaa;
+      position: relative;
+      top: 0.2em;
+      box-shadow: 0 0 0 0.05em black;
+      cursor: pointer;
+    }
+
+    .key--space {
+      width: 18em;
+    }
+
+    .key--letter {
+      line-height: 2.8em;
+    }
+
+    .keyboard>.keyboard__row {
+      text-align: center;
+    }
+
+
+    .flex-section {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .flex-column {
+      flex-direction: column;
+    }
+
+    .development-wrapper {
+      gap: 0px;
+    }
+
+    .development {
+      display: flex;
+      gap: 10px;
+    }
+
+    .development p {
+      font-size: 1.5em;
+    }
+
+    .development img {
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+    }
+
+    .call-btn {
+      display: flex;
+      align-items: center;
+    }
+  </style>
+
+
+
+</head>
+
+<body>
+  <div class="topbar">
+    <p class="playwrite-us-modern-guides-regular">Echo Everest</p>
+
+  </div>
+
+  <div class="main-wrapper">
+    <div class="heading">
+      <p>GET THE <span class="title">ECHO EVEREST</span></p>
+    </div>
+
+
+    <div class="sub-wrapper">
+      <div class="keyboard">
+
+        <div class="keyboard__row">
+
+          <div class="key--letter">E</div>
+          <div class="key--letter">X</div>
+          <div class="key--letter">P</div>
+          <div class="key--letter">R</div>
+          <div class="key--letter">I</div>
+          <div class="key--letter">E</div>
+          <div class="key--letter">N</div>
+          <div class="key--letter">C</div>
+          <div class="key--letter">E</div>
+
+
+
+        </div>
+      </div>
+
+
+      <div class="flex-section">
+
+        <div class="flex-section flex-column development-wrapper">
+
+          <div class="development">
+            <img src="./image.png" alt="arrow">
+            <p>Website Development</p>
+          </div>
+
+          <div class="development">
+            <img src="./image.png" alt="arrow">
+            <p>App Development</p>
+          </div>
+
+          <div class="development">
+            <img src="./image.png" alt="arrow">
+            <p>Software Development</p>
+          </div>
+
+        </div>
+
+        <div class="keyboard call-btn">
+
+          <div class="keyboard__row">
+
+            <div class="key--letter key--space">Schedule a Call</div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
