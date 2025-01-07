@@ -46,7 +46,7 @@
       margin: 0;
     }
 
-    .title {
+    .heading p > span.title {
       font-size: 6rem;
       font-weight: 700;
       display: block;
@@ -114,17 +114,16 @@
     }
 
 
-    .flex-section {
+    .dev__callbtn {
       display: flex;
       justify-content: center;
       gap: 10px;
     }
 
-    .flex-column {
-      flex-direction: column;
-    }
-
     .development-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       gap: 0px;
     }
 
@@ -147,6 +146,39 @@
       display: flex;
       align-items: center;
     }
+
+    @media (max-width: 576px) {
+
+      .heading p {
+        font-size: 4rem;
+      }
+  
+      .heading p > span.title {
+        font-size: 5rem;
+      }
+
+      .keyboard {
+        text-align: center;
+        font-size: 12px;
+        margin-bottom: 10px;
+      }
+
+      .keyboard__row>* {
+        width: 3em;
+      }
+
+      .key--space {
+        width: 18em;
+      }
+
+      .dev__callbtn {
+        flex-direction: column;
+        align-items: center;
+      }
+
+
+    }
+
   </style>
 
 
@@ -186,9 +218,9 @@
       </div>
 
 
-      <div class="flex-section">
+      <div class="dev__callbtn">
 
-        <div class="flex-section flex-column development-wrapper">
+        <div class="development-wrapper">
 
           <div class="development">
             <img src="./image.png" alt="arrow">
